@@ -8,23 +8,6 @@ use Pimlie\DatatablesMongodb\Processors\DataProcessor;
 abstract class BaseEngine extends YajraBaseEngine
 {
     /**
-     * Get processed data
-     *
-     * @param bool|false $object
-     * @return array
-     */
-    protected function getProcessedData($object = false)
-    {
-        $processor = new DataProcessor(
-            $this->results(),
-            $this->columnDef,
-            $this->templates,
-            $this->request->input('start')
-        );
-        return $processor->process($object);
-    }
-    
-    /**
      * Get config is case insensitive status.
      *
      * @return bool
