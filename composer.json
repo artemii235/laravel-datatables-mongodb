@@ -1,5 +1,5 @@
 {
-    "name": "pimlie/laravel-datatables-mongodb",
+    "name": "artemii235/laravel-datatables-mongodb",
     "description": "Extension for yajra/datatables to support mongodb backend",
     "keywords": [
         "laravel",
